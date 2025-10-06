@@ -14,7 +14,7 @@ namespace Library
         string Author;
         string ISBN;
 
-        void DisplayInfo() //display info 
+        public void DisplayInfo() //display info 
         {
 
             Console.WriteLine($"Book Title: {Title}");

@@ -16,24 +16,28 @@
 
     }
 
+    //Book Constructor 
+    public Book(string bookTitle, string bookAuthor, string bookISBN)
+    {
+
+        this.Title = bookTitle;
+        this.Author = bookAuthor;    
+        this.ISBN = bookISBN;   
+
+    }
+
     static void Main(string[] args)
     {
 
         //book object
 
-        Book book = new Book();
-
-        book.Title = "C# beginners";
-        book.Author = "BillGates";
-        book.ISBN = "1234578";
+        Book book = new Book("C# beginners", "Bill Gates","12345678" );
 
         //book 1 object
 
-        Book book1 = new Book();
+        Book book1 = new Book("C# Methods and Classes", "Microsoft", "55667788");
 
-        book1.Title = "C# Methods and Classes";
-        book1.Author = "Microsoft";
-        book1.ISBN = "55667788";
+
 
         //Output book information to the console
         book.DisplayInfo();
